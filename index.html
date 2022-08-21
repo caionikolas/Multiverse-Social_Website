@@ -48,14 +48,14 @@
 
         <!---------------------SIDEBAR------------------->
         <div class="sidebar">
-          <a class="menu-item">
+          <a class="menu-item active">
             <span><i class="uil uil-home"></i></span><h3>Início</h3>
           </a>
           <a class="menu-item">
             <span><i class="uil uil-compass"></i></span><h3>Explorar</h3>
           </a>
-          <a class="menu-item">
-            <span><i class="uil uil-bell"></i></span><h3>Notificações</h3>
+          <a class="menu-item" id="notifications">
+            <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notificações</h3>
             <!----------NOTIFICATION POPUP----------->
             <div class="notifications-popup">
               <div>
@@ -113,9 +113,10 @@
                 </div>
               </div>
             </div>
+            <!----------END NOTIFICATION POPUP----------->
           </a>
-          <a class="menu-item">
-            <span><i class="uil uil-envelope-alt"></i></span><h3>Mensagens</h3>
+          <a class="menu-item" id="messages-notifications">
+            <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span><h3>Mensagens</h3>
           </a>
           <a class="menu-item">
             <span><i class="uil uil-bookmark"></i></span><h3>Favoritos</h3>
@@ -130,14 +131,16 @@
             <span><i class="uil uil-setting"></i></span><h3>Configurações</h3>
           </a>
         </div>
+        <!----------END SIDEBAR----------->
+        <label for="create-post" class="btn btn-primary">Criar Post</label>
       </div>
       <!--================MIDDLE===================-->
       <div class="middle">
-
+        
       </div>
       <!--================RIGHT===================-->
       <div class="right">
-
+        
       </div>
     </div>
   </main>
