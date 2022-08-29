@@ -1,243 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiverse - Responsive Social Media Website</title>
-  <!-- ICONSCOUT CDN -->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-  <!-- STYLESHEET -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
-    <div class="container">
-      <h2 class="log">
-        Multiverse
-      </h2>
-      <div class="search-bar">
-        <i class="uil uil-search"></i>
-        <input type="search" placeholder="Search for Planeswalkers, places and creatures">
-      </div>
-      <div class="create">
-        <label class="btn btn-primary" for="create-post">Criar</label>
-        <div class="profile-photo">
-          <img src="./images/profile-1.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiverse - Responsive Social Media Website</title>
+    <!-- ICONSCOUT CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h2 class="log">Multiverse</h2>
+        <div class="search-bar">
+          <i class="uil uil-search"></i>
+          <input
+            type="search"
+            placeholder="Search for Planeswalkers, places and creatures"
+          />
         </div>
-      </div>
-    </div>
-  </nav>
-
-  <!--------------------MAIN--------------------->
-  <main>
-    <div class="container">
-      <!--================LEFT===================-->
-      <div class="left">
-        <a class="profile">
+        <div class="create">
+          <label class="btn btn-primary" for="create-post">Criar</label>
           <div class="profile-photo">
-            <img src="./images/profile-1.jpg">
-          </div>
-          <div class="handle">
-            <h4>Liliana Vess</h4>
-            <p class="text-muted">
-              @Lili_Vess
-            </p>
-          </div>
-        </a>
-
-        <!---------------------SIDEBAR------------------->
-        <div class="sidebar">
-          <a class="menu-item active">
-            <span><i class="uil uil-home"></i></span><h3>Início</h3>
-          </a>
-          <a class="menu-item">
-            <span><i class="uil uil-compass"></i></span><h3>Explorar</h3>
-          </a>
-          <a class="menu-item" id="notifications">
-            <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notificações</h3>
-            <!----------NOTIFICATION POPUP----------->
-            <div class="notifications-popup">
-              <div>
-                <div class="profile-photo">
-                  <img src="./images/profile-2.jpg">
-                </div>
-                <div class="notification-body">
-                  <b>Chandra Nalaar</b> aceitou seu pedido de amizade
-                  <small class="text-muted">1 HORA ATRÁS</small>
-                </div>
-              </div>
-              <div>
-                <div class="profile-photo">
-                  <img src="./images/profile-3.jpg">
-                </div>
-                <div class="notification-body">
-                  <b>Jace Beleren</b> comentou seu post 
-                  <small class="text-muted">1 HORA ATRÁS</small>
-                </div>
-              </div>
-              <div>
-                <div class="profile-photo">
-                  <img src="./images/profile-4.jpg">
-                </div>
-                <div class="notification-body">
-                  <b>Gideon Jura</b> comentou seu post 
-                  <small class="text-muted">2 HORA ATRÁS</small>
-                </div>
-              </div>
-              <div>
-                <div class="profile-photo">
-                  <img src="./images/profile-5.jpg">
-                </div>
-                <div class="notification-body">
-                  <b>Nissa Revane</b> comentou em um post que você foi marcada 
-                  <small class="text-muted">5 HORA ATRÁS</small>
-                </div>
-              </div>
-              <div>
-                <div class="profile-photo">
-                  <img src="./images/profile-6.jpg">
-                </div>
-                <div class="notification-body">
-                  <b>Elspeth Tirel</b> comentou em um post que você foi marcada 
-                  <small class="text-muted">7 HORA ATRÁS</small>
-                </div>
-              </div>
-              <div>
-                <div class="profile-photo">
-                  <img src="./images/profile-7.jpg">
-                </div>
-                <div class="notification-body">
-                  <b>Ajani Goldmane</b> comentou seu post
-                  <small class="text-muted">20 HORA ATRÁS</small>
-                </div>
-              </div>
-            </div>
-            <!----------END NOTIFICATION POPUP----------->
-          </a>
-          <a class="menu-item" id="messages-notifications">
-            <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span><h3>Mensagens</h3>
-          </a>
-          <a class="menu-item">
-            <span><i class="uil uil-bookmark"></i></span><h3>Favoritos</h3>
-          </a>
-          <a class="menu-item">
-            <span><i class="uil uil-chart-line"></i></span><h3>Análise</h3>
-          </a>
-          <a class="menu-item">
-            <span><i class="uil uil-palette"></i></span><h3>Tema</h3>
-          </a>
-          <a class="menu-item">
-            <span><i class="uil uil-setting"></i></span><h3>Configurações</h3>
-          </a>
-        </div>
-        <!----------END SIDEBAR----------->
-        <label for="create-post" class="btn btn-primary">Criar Post</label>
-      </div>
-      <!--================MIDDLE===================-->
-      <div class="middle">
-        <!----------------STORIES-------------------->
-        <div class="stories">
-          <div class="story">
-            <div class="profile-photo">
-              <img src="./images/profile-1.jpg">
-            </div>
-            <p class="name">Your Story</p>
-          </div>
-          <div class="story">
-            <div class="profile-photo">
-              <img src="./images/profile-8.jpg">
-            </div>
-            <p class="name">Teferi</p>
-          </div>
-          <div class="story">
-            <div class="profile-photo">
-              <img src="./images/profile-9.jpg">
-            </div>
-            <p class="name">Nicos Bolas</p>
-          </div>
-          <div class="story">
-            <div class="profile-photo">
-              <img src="./images/profile-10.jpg">
-            </div>
-            <p class="name">Oko</p>
-          </div>
-          <div class="story">
-            <div class="profile-photo">
-              <img src="./images/profile-11.jpg">
-            </div>
-            <p class="name">Sorin</p>
-          </div>
-          <div class="story">
-            <div class="profile-photo">
-              <img src="./images/profile-12.jpg">
-            </div>
-            <p class="name">Ugin</p>
+            <img src="./images/profile-1.jpg" />
           </div>
         </div>
-        <!----------------END OF STORIES-------------------->
-        <form class="create-post">
-          <div class="profile-photo">
-            <img src="./images/profile-1.jpg">
+      </div>
+    </nav>
+
+    <!--------------------MAIN--------------------->
+    <main>
+      <div class="container">
+        <!--================LEFT===================-->
+        <div class="left">
+          <a class="profile">
+            <div class="profile-photo">
+              <img src="./images/profile-1.jpg" />
+            </div>
+            <div class="handle">
+              <h4>Liliana Vess</h4>
+              <p class="text-muted">@Lili_Vess</p>
+            </div>
+          </a>
+
+          <!---------------------SIDEBAR------------------->
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span><i class="uil uil-home"></i></span>
+              <h3>Início</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-compass"></i></span>
+              <h3>Explorar</h3>
+            </a>
+            <a class="menu-item" id="notifications">
+              <span
+                ><i class="uil uil-bell"
+                  ><small class="notification-count">9+</small></i
+                ></span
+              >
+              <h3>Notificações</h3>
+              <!----------NOTIFICATION POPUP----------->
+              <div class="notifications-popup">
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-2.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Chandra Nalaar</b> aceitou seu pedido de amizade
+                    <small class="text-muted">1 HORA ATRÁS</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-3.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Jace Beleren</b> comentou seu post
+                    <small class="text-muted">1 HORA ATRÁS</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-4.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Gideon Jura</b> comentou seu post
+                    <small class="text-muted">2 HORA ATRÁS</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-5.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Nissa Revane</b> comentou em um post que você foi marcada
+                    <small class="text-muted">5 HORA ATRÁS</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-6.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Elspeth Tirel</b> comentou em um post que você foi
+                    marcada
+                    <small class="text-muted">7 HORA ATRÁS</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-7.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Ajani Goldmane</b> comentou seu post
+                    <small class="text-muted">20 HORA ATRÁS</small>
+                  </div>
+                </div>
+              </div>
+              <!----------END NOTIFICATION POPUP----------->
+            </a>
+            <a class="menu-item" id="messages-notifications">
+              <span
+                ><i class="uil uil-envelope-alt"
+                  ><small class="notification-count">6</small></i
+                ></span
+              >
+              <h3>Mensagens</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-bookmark"></i></span>
+              <h3>Favoritos</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-chart-line"></i></span>
+              <h3>Análise</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-palette"></i></span>
+              <h3>Tema</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-setting"></i></span>
+              <h3>Configurações</h3>
+            </a>
           </div>
-          <input type="text" placeholder="O que você está pensando, Liliana?" id="create-post">
-          <input type="submit" value="post" class="btn btn-primary">
-        </form>
+          <!----------END SIDEBAR----------->
+          <label for="create-post" class="btn btn-primary">Criar Post</label>
+        </div>
+        <!--================MIDDLE===================-->
+        <div class="middle">
+          <!----------------STORIES-------------------->
+          <div class="stories">
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-1.jpg" />
+              </div>
+              <p class="name">Your Story</p>
+            </div>
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-8.jpg" />
+              </div>
+              <p class="name">Teferi</p>
+            </div>
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-9.jpg" />
+              </div>
+              <p class="name">Nicos Bolas</p>
+            </div>
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-10.jpg" />
+              </div>
+              <p class="name">Oko</p>
+            </div>
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-11.jpg" />
+              </div>
+              <p class="name">Sorin</p>
+            </div>
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-12.jpg" />
+              </div>
+              <p class="name">Ugin</p>
+            </div>
+          </div>
+          <!----------------END OF STORIES-------------------->
+          <form class="create-post">
+            <div class="profile-photo">
+              <img src="./images/profile-1.jpg" />
+            </div>
+            <input
+              type="text"
+              placeholder="O que você está pensando, Liliana?"
+              id="create-post"
+            />
+            <input type="submit" value="post" class="btn btn-primary" />
+          </form>
 
-        <!---------------- FEEDS -------------------->
-        <div class="feeds">
-          <!---------------- FEED 1 -------------------->
-          <div class="feed">
-            <div class="head">
-              <div class="user">
-                <div class="profile-photo">
-                  <img src="./images/profile-9.jpg">
+          <!---------------- FEEDS -------------------->
+          <div class="feeds">
+            <!---------------- FEED 1 -------------------->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-9.jpg" />
+                  </div>
+                  <div class="info">
+                    <h3>Nicol Bolas</h3>
+                    <small>Ravnica, 15 Minutos Átras</small>
+                  </div>
+                  <span class="edit">
+                    <i class="uil uil-ellipsis-h"></i>
+                  </span>
                 </div>
-                <div class="info">
-                  <h3>Nicol Bolas</h3>
-                  <small>Ravnica, 15 Minutos Átras</small>
+              </div>
+
+              <div class="photo">
+                <img src="./images/feed-1.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
                 </div>
-                <span class="edit">
-                  <i class="uil uil-ellipsis-h"></i>
-                </span>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
               </div>
-            </div>
 
-            <div class="photo">
-              <img src="./images/feed-1.jpg">
-            </div>
-
-            <div class="action-button">
-              <div class="interaction-buttons">
-                <span><i class="uil uil-heart"></i></span>
-                <span><i class="uil uil-comment-dots"></i></span>
-                <span><i class="uil uil-share-alt"></i></span>
+              <div class="liked-by">
+                <span><img src="./images/profile-5.jpg" alt="" /></span>
+                <span><img src="./images/profile-7.jpg" alt="" /></span>
+                <span><img src="./images/profile-12.jpg" alt="" /></span>
+                <p>curtido por <b>Nissa</b> e <b>Outras pessoas</b></p>
               </div>
-              <div class="bookmark">
-                <span><i class="uil uil-bookmark-full"></i></span>
+
+              <div class="caption">
+                <p>
+                  <b>Nicol Bolas</b> Cai pra dentro.
+                  <span class="harsh-tag">#TheRavager</span>
+                </p>
               </div>
+              <div class="comments text-muted">Ver Todos os 277 comments</div>
             </div>
+            <!-------------- END OF FEED ----------------->
 
-            <div class="liked-by">
-              <span><img src="./images/profile-5.jpg" alt=""></span>
-              <span><img src="./images/profile-7.jpg" alt=""></span>
-              <span><img src="./images/profile-12.jpg" alt=""></span>
-              <p>curtido por <b>Nissa</b> e <b>Outras pessoas</b></p>
-            </div>
+            <!---------------- FEED 2 -------------------->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-9.jpg" />
+                  </div>
+                  <div class="info">
+                    <h3>Nicol Bolas</h3>
+                    <small>Ravnica, 15 Minutos Átras</small>
+                  </div>
+                  <span class="edit">
+                    <i class="uil uil-ellipsis-h"></i>
+                  </span>
+                </div>
+              </div>
 
-            <div class="caption">
-              <p><b>Nicol Bolas</b> Cai pra dentro. <span class="harsh-tag">#TheRavager</span></p>
+              <div class="photo">
+                <img src="./images/feed-1.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/profile-5.jpg" alt="" /></span>
+                <span><img src="./images/profile-7.jpg" alt="" /></span>
+                <span><img src="./images/profile-12.jpg" alt="" /></span>
+                <p>curtido por <b>Nissa</b> e <b>Outras pessoas</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Nicol Bolas</b> Cai pra dentro.
+                  <span class="harsh-tag">#TheRavager</span>
+                </p>
+              </div>
+              <div class="comments text-muted">Ver Todos os 277 comments</div>
             </div>
-            <div class="comments text-muted">Ver Todos os 277 comments</div>
+            <!-------------- END OF FEED 2 --------------->
+
+            <!---------------- FEED 3 -------------------->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-9.jpg" />
+                  </div>
+                  <div class="info">
+                    <h3>Nicol Bolas</h3>
+                    <small>Ravnica, 15 Minutos Átras</small>
+                  </div>
+                  <span class="edit">
+                    <i class="uil uil-ellipsis-h"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="photo">
+                <img src="./images/feed-1.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/profile-5.jpg" alt="" /></span>
+                <span><img src="./images/profile-7.jpg" alt="" /></span>
+                <span><img src="./images/profile-12.jpg" alt="" /></span>
+                <p>curtido por <b>Nissa</b> e <b>Outras pessoas</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Nicol Bolas</b> Cai pra dentro.
+                  <span class="harsh-tag">#TheRavager</span>
+                </p>
+              </div>
+              <div class="comments text-muted">Ver Todos os 277 comments</div>
+            </div>
+            <!-------------- END OF FEED 3 --------------->
+
+            <!---------------- FEED 4 -------------------->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-9.jpg" />
+                  </div>
+                  <div class="info">
+                    <h3>Nicol Bolas</h3>
+                    <small>Ravnica, 15 Minutos Átras</small>
+                  </div>
+                  <span class="edit">
+                    <i class="uil uil-ellipsis-h"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="photo">
+                <img src="./images/feed-1.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/profile-5.jpg" alt="" /></span>
+                <span><img src="./images/profile-7.jpg" alt="" /></span>
+                <span><img src="./images/profile-12.jpg" alt="" /></span>
+                <p>curtido por <b>Nissa</b> e <b>Outras pessoas</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Nicol Bolas</b> Cai pra dentro.
+                  <span class="harsh-tag">#TheRavager</span>
+                </p>
+              </div>
+              <div class="comments text-muted">Ver Todos os 277 comments</div>
+            </div>
+            <!-------------- END OF FEED 4 --------------->
+
+            <!---------------- FEED 5 -------------------->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-9.jpg" />
+                  </div>
+                  <div class="info">
+                    <h3>Nicol Bolas</h3>
+                    <small>Ravnica, 15 Minutos Átras</small>
+                  </div>
+                  <span class="edit">
+                    <i class="uil uil-ellipsis-h"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="photo">
+                <img src="./images/feed-1.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/profile-5.jpg" alt="" /></span>
+                <span><img src="./images/profile-7.jpg" alt="" /></span>
+                <span><img src="./images/profile-12.jpg" alt="" /></span>
+                <p>curtido por <b>Nissa</b> e <b>Outras pessoas</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Nicol Bolas</b> Cai pra dentro.
+                  <span class="harsh-tag">#TheRavager</span>
+                </p>
+              </div>
+              <div class="comments text-muted">Ver Todos os 277 comments</div>
+            </div>
+            <!-------------- END OF FEED 5 --------------->
           </div>
         </div>
-
+        <!--================RIGHT===================-->
+        <div class="right"></div>
       </div>
-      <!--================RIGHT===================-->
-      <div class="right">
-        
-      </div>
-    </div>
-  </main>
-</body>
+    </main>
+  </body>
 </html>
