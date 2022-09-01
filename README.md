@@ -6,4 +6,5 @@
 > - Stories
 > - Feed/Post markup
 > - style feed/add feeds
-> - messages e requests markup
+> - messages and requests markup
+> - ...
